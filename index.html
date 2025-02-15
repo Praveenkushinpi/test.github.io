@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Retro Portfolio</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #ffcc00, #ff6699);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #000;
+            padding: 20px;
+            border: 5px solid #ffcc00;
+            box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 3px 3px #ff6699;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 1.5em;
+            border: 2px solid #ffcc00;
+            padding: 5px 15px;
+            background: #ff6699;
+        }
+        .nav a:hover {
+            background: #ffcc00;
+            color: #000;
+        }
+        .section {
+            margin-top: 30px;
+            font-size: 1.2em;
+            background: #ff6699;
+            padding: 20px;
+            border: 3px dashed #ffcc00;
+        }
+        .rotating-image {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Retro Portfolio!</h1>
+        <img src="asssets/my.gif" alt="Rotating Image" class="rotating-image">
+        <div class="nav">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hi! I'm an awesome web developer who loves retro styles and funky designs. Let's create something cool!</p>
+        </div>
+        <div id="projects" class="section">
+            <h2>My Projects</h2>
+            <p>Check out my amazing work in web development, game design, and creative coding.</p>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Email: me@retrodev.com</p>
+        </div>
+        <div class="footer">&copy; 2025 My Retro Portfolio</div>
+    </div>
+</body>
+</html>
