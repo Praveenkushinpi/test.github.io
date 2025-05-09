@@ -1,269 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BuilderBlend - Construction Visualization</title>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="./src/index.css" rel="stylesheet">
-  </head>
-  <body class="min-h-screen bg-zinc-100">
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-orange-600 to-orange-700 text-white">
-      <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <i data-lucide="cube" class="h-8 w-8"></i>
-          <span class="text-2xl font-bold">BuilderBlend</span>
-        </div>
-        <div class="hidden md:flex space-x-8">
-          <a href="#tutorials" class="hover:text-orange-200">Tutorials</a>
-          <a href="#blog" class="hover:text-orange-200">Blog</a>
-          <a href="#resources" class="hover:text-orange-200">Resources</a>
-          <a href="#community" class="hover:text-orange-200">Community</a>
-          <a href="#contact" class="hover:text-orange-200">Contact</a>
-        </div>
-      </nav>
-      
-      <div class="container mx-auto px-6 py-24">
-        <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2">
-            <h1 class="text-5xl font-bold mb-6">Master Blender for Construction</h1>
-            <p class="text-xl mb-8">Create stunning architectural visualizations and construction animations with Blender</p>
-            <button class="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors flex items-center">
-              Get Started
-              <i data-lucide="chevron-right" class="ml-2"></i>
-            </button>
-          </div>
-          <div class="md:w-1/2 mt-8 md:mt-0">
-            <img 
-              src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&q=80&w=800" 
-              alt="3D Building Render"
-              class="rounded-lg shadow-xl"
-            />
-          </div>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boba Planet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#flavors">Flavors</a></li>
+  </ul>
+</nav>
 
-    <!-- Features Section -->
-    <section class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-16">What We Offer</h2>
-        <div class="grid md:grid-cols-3 gap-12">
-          <div class="text-center">
-            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i data-lucide="youtube" class="h-8 w-8 text-orange-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Video Tutorials</h3>
-            <p class="text-gray-600">Step-by-step guides for creating professional construction visualizations</p>
-          </div>
-          <div class="text-center">
-            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i data-lucide="book-open" class="h-8 w-8 text-orange-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Blog Articles</h3>
-            <p class="text-gray-600">In-depth articles about construction modeling techniques and best practices</p>
-          </div>
-          <div class="text-center">
-            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i data-lucide="link" class="h-8 w-8 text-orange-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-4">Resources</h3>
-            <p class="text-gray-600">Free models, textures, and tools for construction visualization</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <header>
+    <h1>🌌 Welcome to Boba Planet 🧋</h1>
+    <p>Where bubble tea flows from volcanoes and tapioca orbits in space!</p>
+  </header>
 
-    <!-- Latest Tutorials -->
-    <section id="tutorials" class="py-20 bg-zinc-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-16">Latest Tutorials</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Tutorial Card 1 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-            <img 
-              src="https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&q=80&w=400"
-              alt="Tutorial thumbnail"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Creating Realistic Construction Materials</h3>
-              <p class="text-gray-600 mb-4">Learn how to create photorealistic materials for your construction projects</p>
-              <button class="text-orange-600 font-semibold hover:text-orange-700">Watch Tutorial →</button>
-            </div>
-          </div>
-          <!-- Tutorial Card 2 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-            <img 
-              src="https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&q=80&w=400"
-              alt="Tutorial thumbnail"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Advanced Lighting Techniques</h3>
-              <p class="text-gray-600 mb-4">Master the art of lighting in architectural visualization</p>
-              <button class="text-orange-600 font-semibold hover:text-orange-700">Watch Tutorial →</button>
-            </div>
-          </div>
-          <!-- Tutorial Card 3 -->
-          <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-            <img 
-              src="https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&q=80&w=400"
-              alt="Tutorial thumbnail"
-              class="w-full h-48 object-cover"
-            />
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Construction Animation Basics</h3>
-              <p class="text-gray-600 mb-4">Learn the fundamentals of creating construction animations</p>
-              <button class="text-orange-600 font-semibold hover:text-orange-700">Watch Tutorial →</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="grid-container">
+    <div class="card">
+      <h2>Galactic Tapioca</h2>
+      <p>Enjoy pearls from other galaxies — chewy, cosmic, and delicious.</p>
+    </div>
+    <div class="card">
+      <h2>Flavor Nebula</h2>
+      <p>Pick from a cloud of flavors: lychee, matcha, taro, and more.</p>
+    </div>
+    <div class="card">
+      <h2>Boba Planet</h2>
+      <p>Just a Big BOBA Ball</p>
+    </div>
+  </section>
+  <section id="about" class="about-section">
+  <h2>👽 About Boba Planet</h2>
+  <p>
+    Founded by starry-eyed baristas, Boba Planet serves intergalactic joy with every sip.
+    No grant. No gimmicks. Just tapioca-powered dreams.
+  </p>
+</section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="flex justify-between items-center mb-16">
-          <h2 class="text-3xl font-bold">Latest Articles</h2>
-          <div class="flex gap-4">
-            <button class="px-4 py-2 text-orange-600 hover:bg-orange-50 rounded-lg">All Posts</button>
-            <button class="px-4 py-2 text-orange-600 hover:bg-orange-50 rounded-lg">Tutorials</button>
-            <button class="px-4 py-2 text-orange-600 hover:bg-orange-50 rounded-lg">Tips & Tricks</button>
-          </div>
-        </div>
-        <div class="grid md:grid-cols-2 gap-12">
-          <!-- Blog Post 1 -->
-          <article class="flex flex-col md:flex-row gap-8">
-            <img 
-              src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?auto=format&fit=crop&q=80&w=300"
-              alt="Blog post thumbnail"
-              class="w-full md:w-48 h-48 object-cover rounded-lg"
-            />
-            <div>
-              <div class="flex items-center gap-4 text-sm text-gray-600 mb-2">
-                <span class="flex items-center gap-1">
-                  <i data-lucide="clock" class="h-4 w-4"></i>
-                  March 15, 2024
-                </span>
-                <span class="flex items-center gap-1">
-                  <i data-lucide="user" class="h-4 w-4"></i>
-                  John Doe
-                </span>
-                <span class="flex items-center gap-1">
-                  <i data-lucide="tag" class="h-4 w-4"></i>
-                  Tutorials
-                </span>
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Top 10 Blender Addons for Architecture</h3>
-              <p class="text-gray-600 mb-4">Discover the essential Blender addons that will streamline your architectural workflow and enhance your construction visualization projects...</p>
-              <button class="text-orange-600 font-semibold hover:text-orange-700">Read More →</button>
-            </div>
-          </article>
-          <!-- More blog posts... -->
-        </div>
-      </div>
-    </section>
+<section id="flavors" class="flavor-section">
+  <h2>🎲 Feeling Lucky?</h2>
+  <button class="flavor-button">Try a Random Flavor!</button>
+  <p class="fake-response">💡 You got... Cosmic Lychee!</p>
+</section>
 
-    <!-- Resources Section -->
-    <section id="resources" class="py-20 bg-zinc-100">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-16">Free Resources</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- 3D Models -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-              <i data-lucide="download" class="h-6 w-6 text-orange-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">3D Models</h3>
-            <p class="text-gray-600 mb-4">Download free construction-ready 3D models for your projects</p>
-            <ul class="space-y-2 text-gray-600">
-              <li>• Construction Equipment</li>
-              <li>• Building Components</li>
-              <li>• Architectural Elements</li>
-            </ul>
-            <button class="mt-6 text-orange-600 font-semibold hover:text-orange-700">Browse Models →</button>
-          </div>
-          <!-- Community Hub -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-              <i data-lucide="users" class="h-6 w-6 text-orange-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Community Hub</h3>
-            <p class="text-gray-600 mb-4">Join our community of construction visualization experts</p>
-            <ul class="space-y-2 text-gray-600">
-              <li>• Discussion Forums</li>
-              <li>• Project Showcase</li>
-              <li>• Feedback & Support</li>
-            </ul>
-            <button class="mt-6 text-orange-600 font-semibold hover:text-orange-700">Join Community →</button>
-          </div>
-          <!-- Support -->
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-              <i data-lucide="message-circle" class="h-6 w-6 text-orange-600"></i>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Support</h3>
-            <p class="text-gray-600 mb-4">Get help with your construction visualization projects</p>
-            <ul class="space-y-2 text-gray-600">
-              <li>• Technical Support</li>
-              <li>• Documentation</li>
-              <li>• Video Guides</li>
-            </ul>
-            <button class="mt-6 text-orange-600 font-semibold hover:text-orange-700">Get Help →</button>
-          </div>
-        </div>
-      </div>
-    </section>
+  <footer>
+    <p>✨ Boba Planet © 2025 – No grants, just good vibes ✨</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="bg-zinc-900 text-white py-12">
-      <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-4 gap-12">
-          <div>
-            <div class="flex items-center space-x-2 mb-6">
-              <i data-lucide="cube" class="h-8 w-8"></i>
-              <span class="text-2xl font-bold">BuilderBlend</span>
-            </div>
-            <p class="text-zinc-400">Your go-to resource for construction visualization with Blender</p>
-          </div>
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul class="space-y-2 text-zinc-400">
-              <li><a href="#" class="hover:text-white">Home</a></li>
-              <li><a href="#tutorials" class="hover:text-white">Tutorials</a></li>
-              <li><a href="#blog" class="hover:text-white">Blog</a></li>
-              <li><a href="#resources" class="hover:text-white">Resources</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Resources</h4>
-            <ul class="space-y-2 text-zinc-400">
-              <li><a href="#" class="hover:text-white">Download Models</a></li>
-              <li><a href="#" class="hover:text-white">Texture Library</a></li>
-              <li><a href="#" class="hover:text-white">Community</a></li>
-              <li><a href="#" class="hover:text-white">Support</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-lg font-semibold mb-4">Contact</h4>
-            <ul class="space-y-2 text-zinc-400">
-              <li>Email: contact@builderblend.com</li>
-              <li>Follow us on social media</li>
-            </ul>
-          </div>
-        </div>
-        <div class="border-t border-zinc-800 mt-12 pt-8 text-center text-zinc-400">
-          <p>© 2024 BuilderBlend. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      lucide.createIcons();
-    </script>
-  </body>
+  <div class="floating-boba"></div>
+   <div class="floating-boba-1"></div>
+   <div class="floating-boba-2"></div>
+   <div class="floating-boba-3"></div>
+   <div class="floating-boba-4"></div>
+   <div class="floating-boba-5"></div>
+   <div class="floating-boba-6"></div>
+   <div class="floating-boba-7"></div>
+   <div class="floating-boba-8"></div>
+   <div class="floating-boba-9"></div>
+  <div class="floating-boba delay"></div>
+</body>
 </html>
