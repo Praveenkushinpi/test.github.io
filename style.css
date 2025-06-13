@@ -1,0 +1,243 @@
+* {
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Chewy', cursive;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background: #fff8f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #ffda9e;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #4b2800;
+}
+
+.waffles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+
+.waffle {
+  text-align: center;
+  background: #ffe7c2;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #ccc;
+  width: 250px;
+}
+
+.waffle img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.feedback {
+  text-align: center;
+  padding: 2em;
+}
+
+footer {
+  background: #ffda9e;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.color-changer {
+  padding: 1em;
+  text-align: center;
+}
+
+
+body.strawberry header,
+body.strawberry footer {
+  background-color: #ffc8dd;
+}
+
+body.strawberry .waffle,
+body.strawberry .testimonials,
+body.strawberry .about-intro {
+  background-color: #ffe0ec;
+  box-shadow: 2px 2px 10px rgba(255, 150, 180, 0.3);
+}
+
+body.strawberry button {
+  background-color: #ff69b4;
+  color: white;
+}
+
+body.strawberry select {
+  background-color: #ffe0f0;
+  border-color: #ff69b4;
+  color: #c21c59;
+}
+body.strawberry h1, body.strawberry h2 {
+  font-family: 'Pacifico', cursive;
+}
+
+body.chocolate header,
+body.chocolate footer {
+  background-color: #c2b280;
+}
+
+body.chocolate .waffle,
+body.chocolate .testimonials,
+body.chocolate .about-intro {
+  background-color: #e6d3b3;
+  box-shadow: 2px 2px 10px rgba(110, 80, 60, 0.3);
+}
+
+body.chocolate button {
+  background-color: #8b4513;
+  color: #fffbe6;
+}
+
+body.chocolate select {
+  background-color: #e0cbb5;
+  border-color: #8b4513;
+  color: #3e2c23;
+}
+body.chocolate h1, body.chocolate h2 {
+  font-family: 'Chewy', cursive;
+}
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2em;
+  gap: 2em;
+  background-color: #fff3e6;
+}
+
+.about-img {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.gallery {
+  text-align: center;
+  padding: 2em;
+  background: #fef6e4;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #bbb;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.testimonials {
+  background: #ffe6cc;
+  padding: 2em;
+  text-align: center;
+}
+
+.quote {
+  margin: 1em 0;
+  font-style: italic;
+}
+button {
+  background-color: #ffb347;
+  border: none;
+  color: white;
+  padding: 0.6em 1.2em;
+  margin-top: 0.5em;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff9800;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+select {
+  background-color: #fff3e0;
+  color: #4b2800;
+  border: 2px solid #ffb347;
+  padding: 0.6em 1em;
+  font-size: 1em;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='12' viewBox='0 0 24 24' width='12' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+select:hover {
+  border-color: #ff9800;
+}
+.feedback {
+  background: #fff7e6;
+  padding: 2em;
+  margin: 2em auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  border: 2px dashed #ffb347;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.feedback h3 {
+  font-family: 'Chewy', cursive;
+  color: #d17d00;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+.feedback input[type="text"] {
+  padding: 0.8em 1.2em;
+  font-size: 1em;
+  border: 2px solid #ffb347;
+  border-radius: 12px;
+  background-color: #fffaf3;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 1em;
+  transition: all 0.3s ease;
+}

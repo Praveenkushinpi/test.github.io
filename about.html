@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Waffle Wonderland</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1>About Waffle Wonderland 🧇</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+<audio id="waffleSound" src="yummy.mp3" preload="auto"></audio>
+
+  <section class="about-intro">
+    <img src="img/chef.png" alt="Chef Waffle" class="about-img">
+    <div>
+      <h2>Our Waffle Dream</h2>
+      <p>Born from syrupy dreams, Waffle Wonderland brings the magic of freshly baked waffles to your screen and tastebuds. From chocolate-drenched crunch to berry-filled love — we serve joy, one waffle at a time.</p>
+      <button onclick="showRandomFunFact()">🤔 Fun Fact</button>
+<p id="funFact" style="display:none;"></p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Waffle Gallery 🍴</h2>
+    <div class="gallery-grid">
+      <img src="img/normi.png" alt="Classic Waffle" onmouseenter="playWaffleSound()">
+      <img src="img/strus.png" alt="Strawberry Waffle" onmouseenter="playWaffleSound()">
+      <img src="img/choc.png" alt="Chocolate Waffle" onmouseenter="playWaffleSound()">      
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>💬 What Our Fans Say</h2>
+    <div class="quote">
+      <p>"Best waffles of my life. I cried happy syrup tears." - <strong>@WaffleQueen</strong></p>
+    </div>
+    <div class="quote">
+      <p>"Tasted one and immediately joined #waffles on Slack." - <strong>@DevChef</strong></p>
+    </div>
+  </section>
+
+  <section class="color-changer">
+    <h3>🎨 Customize Your Flavor Mood</h3>
+    <select onchange="changeTheme(this.value)">
+      <option value="default">🌼 Default</option>
+      <option value="strawberry">🍓 Strawberry</option>
+      <option value="chocolate">🍫 Chocolate</option>
+    </select>
+  </section>
+
+  <footer>
+    <p>Questions? Join <strong>#waffles</strong> on Hack Club Slack 🍁</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
