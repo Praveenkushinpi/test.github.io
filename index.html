@@ -20,21 +20,21 @@
 
   <section class="waffles">
     <div class="waffle" id="normal">
-      <img src="img/normi.png" alt="Normal Waffle" onmouseenter="playWaffleSound()">
+      <img src="img/normi.png" alt="Normal Waffle" onclick="toggleWaffleGlow(event)" onmouseenter="playWaffleSound()">
       <h2>Classic Waffle</h2>
       <button onclick="changeDescription('normal')">More Info</button>
       <p class="desc">Crispy & golden, made with love.</p>
     </div>
 
     <div class="waffle" id="strawberry">
-      <img src="img/strus.png" alt="Strawberry Waffle" onmouseenter="playWaffleSound()">
+      <img src="img/strus.png" alt="Strawberry Waffle" onclick="toggleWaffleGlow(event)" onmouseenter="playWaffleSound()">
       <h2>Strawberry Waffle</h2>
       <button onclick="changeDescription('strawberry')">More Info</button>
       <p class="desc">Sweet and juicy strawberries on top!</p>
     </div>
 
     <div class="waffle" id="chocolate">
-      <img src="img/choc.png" alt="Chocolate Waffle" onmouseenter="playWaffleSound()">
+      <img src="img/choc.png" alt="Chocolate Waffle" onclick="toggleWaffleGlow(event)" onmouseenter="playWaffleSound()">
       <h2>Chocolate Waffle</h2>
       <button onclick="changeDescription('chocolate')">More Info</button>
       <p class="desc">Drizzled with melted chocolate bliss.</p>
@@ -61,6 +61,6 @@
 Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=82939">freesound_community</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=82939">Pixabay</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+html, body {
+    cursor: url("img/cursor.ico") 16 16, auto;
+}
 * {
   transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
@@ -95,7 +98,10 @@ body.strawberry select {
 body.strawberry h1, body.strawberry h2 {
   font-family: 'Pacifico', cursive;
 }
-
+body.strawberry .glow {
+  border-color: #ff69b4;
+  box-shadow: 0 0 20px #ff69b4;
+}
 body.chocolate header,
 body.chocolate footer {
   background-color: #c2b280;
@@ -120,6 +126,10 @@ body.chocolate select {
 }
 body.chocolate h1, body.chocolate h2 {
   font-family: 'Chewy', cursive;
+}
+body.chocolate .glow {
+  border-color: #8b4513;
+  box-shadow: 0 0 20px #8b4513;
 }
 .about-intro {
   display: flex;
@@ -239,5 +249,10 @@ select:hover {
   width: 90%;
   max-width: 400px;
   margin-bottom: 1em;
+  transition: all 0.3s ease;
+}
+.glow {
+  border: 3px solid #ff9800;
+  box-shadow: 0 0 20px #ffb347;
   transition: all 0.3s ease;
 }
